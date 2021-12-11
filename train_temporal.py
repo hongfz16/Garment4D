@@ -420,8 +420,6 @@ def main_PCA_eval():
         else:
             _ = eval_one_epoch_PCA(logger, eval_dataloader, model, body_model, writer, epoch)
         break
-    if args.local_rank == 0:
-        logger.info("The best eval score: {}".format(other_state['best_v_l2']))
 
 from utils.post_processing import process_single_frame
 def eval_one_epoch_PCA_temporal_aggregation(logger, dataloader, model, body_model, writer, epoch):
@@ -450,4 +448,7 @@ def eval_one_epoch_PCA_temporal_aggregation(logger, dataloader, model, body_mode
         pbar.update(1)
 
 if __name__ == '__main__':
-    main_PCA()
+    if args.only_eval:
+        main_PCA_eval()
+    else:
+        main_PCA()

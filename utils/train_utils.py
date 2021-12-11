@@ -3,7 +3,6 @@ import os
 import numpy as np
 import pickle
 import random
-import shutil
 import subprocess
 import torch.multiprocessing as mp
 import torch.distributed as dist

@@ -14,9 +14,9 @@ DATASET:
   GARMENT_FOLDER: Trousers_reg
   CLOTH3D_FOLDER: CLOTH3D
   GARMENT_TEMPLATE_T_POSE_PREFIX: CLOTH3D_template
-  TRAIN_F_LIST: ./dataset/list/CLOTH3D_OBJ_train_all_Trousers_3.txt
-  EVAL_F_LIST: ./dataset/list/CLOTH3D_OBJ_eval_all_Trousers_3.txt
-  EXCLUDE_SEQ_LIST: ./dataset/list/CLOTH3D_OBJ_exclude_Trousers_3.txt
+  TRAIN_F_LIST: ./dataset/CLOTH3D/list/CLOTH3D_OBJ_train_all_Trousers_3.txt
+  EVAL_F_LIST: ./dataset/CLOTH3D/list/CLOTH3D_OBJ_eval_all_Trousers_3.txt
+  EXCLUDE_SEQ_LIST: ./dataset/CLOTH3D/list/CLOTH3D_OBJ_exclude_Trousers_3.txt
 
 LOSS:
   SEM_SEG_LOSS_LAMBDA: 0.05

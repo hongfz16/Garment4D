@@ -114,6 +114,7 @@ def parse_config():
     parser.add_argument('--fix_PCA', type=int, default=0)
     parser.add_argument('--only_seg', type=int, default=0)
     parser.add_argument('--MGN', type=int, default=0)
+    parser.add_argument('--only_eval', type=int, default=0)
 
     args = parser.parse_args()
     cfg_from_yaml_file(args.config, cfg)

@@ -2,7 +2,6 @@ import os
 import numpy as np
 import torch
 from torch.utils import data
-import open3d as o3d
 import pickle
 from tqdm import tqdm
 
